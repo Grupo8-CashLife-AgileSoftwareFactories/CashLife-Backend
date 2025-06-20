@@ -19,10 +19,13 @@ public class OpenApiConfiguration {
         openApi
                 .info(new Info()
                         .title("SafeBudget CashLife Platform API")
-                        .description("SafeBudget CashLife Platform application REST API documentation.")
+                        .description("USafeBudget CashLife Platform application REST API documentation.")
                         .version("v1.0.0")
                         .license(new License().name("Apache 2.0")
                                 .url("https://www.apache.org/licenses/LICENSE-2.0.html")))
+                .externalDocs(new ExternalDocumentation()
+                        .description("SafeBudget CashLife Platform Wiki Documentation")
+                        .url("https://upecinosai-saifu-platform.wiki.github.io/docs"));
 
         final String securitySchemeName = "bearerAuth";
 
