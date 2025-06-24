@@ -8,7 +8,6 @@ import com.cashbudget.cashlife.platform.userContext.interfaces.rest.resources.Cr
 import com.cashbudget.cashlife.platform.userContext.interfaces.rest.resources.PersonResource;
 import com.cashbudget.cashlife.platform.userContext.interfaces.rest.transform.CreatePersonCommandFromResourceAssembler;
 import com.cashbudget.cashlife.platform.userContext.interfaces.rest.transform.PersonResourceFromEntityAssembler;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +17,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/v1/persons", produces = MediaType.APPLICATION_JSON_VALUE)
-@Tag(name = "Persons", description = "Person Management Endpoints")
 public class PersonController {
     private final PersonCommandService personCommandService;
     private final PersonQueryService personQueryService;

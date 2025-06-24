@@ -3,7 +3,6 @@ package com.cashbudget.cashlife.platform.userContext.interfaces.rest;
 import com.cashbudget.cashlife.platform.userContext.domain.model.aggregates.UserConsult;
 import com.cashbudget.cashlife.platform.userContext.domain.model.aggregates.UserConsultId;
 import com.cashbudget.cashlife.platform.userContext.infrastructure.persistence.jpa.repositories.UserConsultRepository;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/v1/user_consults", produces = MediaType.APPLICATION_JSON_VALUE)
-@Tag(name = "User Consults", description = "User Consults Management Endpoints")
 public class UserConsultController {
     private final UserConsultRepository UserConsultRepository;
 
