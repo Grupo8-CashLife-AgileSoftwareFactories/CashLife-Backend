@@ -1,5 +1,5 @@
 # --- Build Stage ---
-FROM maven:3.9.6-eclipse-temurin-23-alpine AS build
+FROM eclipse-temurin:23-jdk-alpine AS build
 WORKDIR /app
 COPY . .
 RUN chmod +x mvnw
